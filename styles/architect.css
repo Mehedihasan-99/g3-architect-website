@@ -20,13 +20,15 @@
   color:#424242;
 }
  /* dark 03 */
- .text-gray{
+ .text-light-gray{
   color: #727272;
+}
+/* orenge  */
+.text-primary{
+  color: #FF900E;
 }
 .bg-light{
   background-color: rgba(255, 144, 14, 0.10) ;
-  max-width: 1900px;
-  height: 1300px;
 }
 .btn-primary {
   background-color: #FF900E;
@@ -55,7 +57,6 @@
   .nav-link{
     text-decoration: none;
     font-weight: 500;
-    color: #000;
   }
   .navbar , .banner{
     max-width: 1440px;
@@ -76,18 +77,76 @@
   .banner-title {
     font-size: 4rem;
     font-weight: 700;
+    margin: 20px;
   }
   .banner-image {
     width: 100%;
   }
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
+}
+  /* section our features  */
+  .teams{
+    align-items: center;
+  }
+  .teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 24px;
+    margin: 30px 50px;
+  }
+.teams-our-features{
+  margin-left: 130px;
+  max-width: 530px;
+}
+.feature-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#quick-list {
+  font-weight: 500;
+}
+
+/* features and experience  */
+.card{
+  width: 580px;
+  height: 170px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.features > h1 {
+  border-left: #FF900E 5px solid;
+  margin-left: 10px;
+}
+
+/* some facts  */
+.facts-container{
+  width: 100%;
+}
+.fact{
+  border: 1px solid #FF900E;
+}
 
 
 
 
   /* responsive media quary */
   @media screen and (max-width: 576px) {
-.navbar , .nav-links {
-  flex-direction: column;
-}
-    
+    .navbar,
+    .nav-links,
+    .teams{
+      flex-direction: column;
+    }
+    .teams-img-container{
+      grid-template-columns: 1fr ;
+      margin: 10px;
+    }
+    .teams-our-features{
+      margin-left: 20px;
+    }
   }
