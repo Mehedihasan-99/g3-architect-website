@@ -115,14 +115,15 @@ main > section {
 
 /* features and experience  */
 .card{
-  width: 580px;
-  height: 170px;
+  /* max-width: 580px; */
+  padding: 30px;
+  margin-bottom: 20px;
   border-radius: 8px;
-  background-color: #ffffff;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
 }
 .features > h1 {
   border-left: #FF900E 5px solid;
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 /* some facts  */
@@ -225,5 +226,8 @@ main > section {
       justify-items: center;
       gap: 20px;
       margin-top: 20px;
+    }
+    .features-img{
+      width: 100%;
     }
   }
